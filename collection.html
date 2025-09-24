@@ -1,141 +1,216 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Fons Campana</title>
-        <link rel="stylesheet" href="./styles/styles.css" />
-        <script>
-            (function (d) {
-                var config = {
-                        kitId: "dol7zfi",
-                        scriptTimeout: 3000,
-                        async: true,
-                    },
-                    h = d.documentElement,
-                    t = setTimeout(function () {
-                        h.className =
-                            h.className.replace(/\bwf-loading\b/g, "") +
-                            " wf-inactive";
-                    }, config.scriptTimeout),
-                    tk = d.createElement("script"),
-                    f = false,
-                    s = d.getElementsByTagName("script")[0],
-                    a;
-                h.className += " wf-loading";
-                tk.src = "https://use.typekit.net/" + config.kitId + ".js";
-                tk.async = true;
-                tk.onload = tk.onreadystatechange = function () {
-                    a = this.readyState;
-                    if (f || (a && a != "complete" && a != "loaded")) return;
-                    f = true;
-                    clearTimeout(t);
-                    try {
-                        Typekit.load(config);
-                    } catch (e) {}
-                };
-                s.parentNode.insertBefore(tk, s);
-            })(document);
-        </script>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
-            rel="stylesheet"
-        />
-    </head>
-    <body>
-        <!-- HEADER -->
-        <header class="header section">
-            <div class="header-content">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="./collection.html">Eyewear Collection</a>
-                        </li>
-                        <li><a href="./about.html">About us</a></li>
-                    </ul>
-                </nav>
-                <h1><a href="./index.html">Fons Campana</a></h1>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="./retailers.html">Authorized Retailers</a>
-                        </li>
-                        <li><a href="#footer">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fons Campana</title>
+		<link rel="stylesheet" href="./styles/styles.css" />
+		<link rel="stylesheet" href="./styles/collection.css" />
+		<script>
+			(function (d) {
+				var config = {
+						kitId: "dol7zfi",
+						scriptTimeout: 3000,
+						async: true,
+					},
+					h = d.documentElement,
+					t = setTimeout(function () {
+						h.className =
+							h.className.replace(/\bwf-loading\b/g, "") +
+							" wf-inactive";
+					}, config.scriptTimeout),
+					tk = d.createElement("script"),
+					f = false,
+					s = d.getElementsByTagName("script")[0],
+					a;
+				h.className += " wf-loading";
+				tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+				tk.async = true;
+				tk.onload = tk.onreadystatechange = function () {
+					a = this.readyState;
+					if (f || (a && a != "complete" && a != "loaded")) return;
+					f = true;
+					clearTimeout(t);
+					try {
+						Typekit.load(config);
+					} catch (e) {}
+				};
+				s.parentNode.insertBefore(tk, s);
+			})(document);
+		</script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- HEADER -->
+		<header class="header section">
+			<div class="header-content">
+				<nav>
+					<ul>
+						<li>
+							<a href="./collection.html">Eyewear Collection</a>
+						</li>
+						<li><a href="./about.html">About us</a></li>
+					</ul>
+				</nav>
+				<h1><a href="./index.html">Fons Campana</a></h1>
+				<nav>
+					<ul>
+						<li>
+							<a href="./retailers.html">Authorized Retailers</a>
+						</li>
+						<li><a href="#footer">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section class="collection-section">
+			<div class="container">
+				<div class="images">
+					<div
+						class="parallax bg1"
+						data-title="Orange scene"
+						data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+						data-btn="Visit retailers"
+					></div>
+					<div
+						class="parallax bg2"
+						data-title="Red scene"
+						data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+						data-btn="Visit retailers"
+					></div>
+					<div
+						class="parallax bg3"
+						data-title="Black scene"
+						data-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+						data-btn="Visit retailers"
+					></div>
+				</div>
+				<div class="text">
+					<div class="text-container">
+						<h2>Nuestros Productos</h2>
+						<p>
+							Bienvenido a nuestra tienda. Aquí puedes ver
+							nuestros productos destacados en la columna
+							izquierda.
+						</p>
+						<button>Comprar ahora</button>
+					</div>
+				</div>
+			</div>
+			<div class="white-space"></div>
+		</section>
 
-        <section class="collection-section">
-            Esto es contenido de retailers
-        </section>
-        <!-- FOOTER -->
-        <footer id="footer" class="footer">
-            <div class="footer-container">
-                <div class="footer-logo">
-                    <p class="garamond">FONS CAMPANA</p>
-                </div>
-                <div class="footer-desc">
-                    <h6 class="garamond">INFO</h6>
-                    <p class="garamond info-list">
-                        <span>+34 666666666</span>
-                        <span
-                            ><a
-                                class="none-decoration"
-                                href="mailto:fonscampana@outlook.com"
-                                >fonscampana@outlook.com</a
-                            ></span
-                        >
-                    </p>
-                </div>
-                <div class="footer-section">
-                    <p>
-                        <a class="none-decoration garamond" href="./about.html"
-                            >ABOUT US</a
-                        >
-                    </p>
-                    <p>
-                        <a
-                            class="none-decoration garamond"
-                            href="./collection.html"
-                            >EYEWEAR COLLECTION</a
-                        >
-                    </p>
-                    <p>
-                        <a
-                            class="none-decoration garamond"
-                            href="./retailers.html"
-                            >AUTHORIZED RETAILERS</a
-                        >
-                    </p>
-                </div>
-                <div class="footer-section">
-                    <p>
-                        <a class="none-decoration garamond" href="./terms.html"
-                            >TERMS OF SERVICE</a
-                        >
-                    </p>
-                    <p>
-                        <a
-                            class="none-decoration garamond"
-                            href="./privacy.html"
-                            >PRIVACY POLICY</a
-                        >
-                    </p>
-                    <p>
-                        <a
-                            class="none-decoration garamond"
-                            href="./cookies.html"
-                            >COOKIE POLICY</a
-                        >
-                    </p>
-                </div>
-            </div>
-        </footer>
+		<!-- FOOTER -->
+		<footer id="footer" class="footer">
+			<div class="footer-container">
+				<div class="footer-logo">
+					<p class="garamond">FONS CAMPANA</p>
+				</div>
+				<div class="footer-desc">
+					<h6 class="garamond">CONTACT</h6>
+					<p class="garamond info-list">
+						<span>+34 666666666</span>
+						<span
+							><a
+								class="none-decoration"
+								href="mailto:fonscampana@outlook.com"
+								>fonscampana@outlook.com</a
+							></span
+						>
+					</p>
+				</div>
+				<div class="footer-section">
+					<p>
+						<a class="none-decoration garamond" href="./about.html"
+							>ABOUT US</a
+						>
+					</p>
+					<p>
+						<a
+							class="none-decoration garamond"
+							href="./collection.html"
+							>EYEWEAR COLLECTION</a
+						>
+					</p>
+					<p>
+						<a
+							class="none-decoration garamond"
+							href="./retailers.html"
+							>AUTHORIZED RETAILERS</a
+						>
+					</p>
+				</div>
+				<div class="footer-section">
+					<p>
+						<a class="none-decoration garamond" href="./terms.html"
+							>TERMS OF SERVICE</a
+						>
+					</p>
+					<p>
+						<a
+							class="none-decoration garamond"
+							href="./privacy.html"
+							>PRIVACY POLICY</a
+						>
+					</p>
+					<p>
+						<a
+							class="none-decoration garamond"
+							href="./cookies.html"
+							>COOKIE POLICY</a
+						>
+					</p>
+				</div>
+			</div>
+		</footer>
 
-        <!-- JS PARA CAMBIAR HEADER SEGÚN VISIBILIDAD DEL VIDEO -->
-        <script src="./scripts/header.js"></script>
-    </body>
+		<!-- JS PARA CAMBIAR HEADER SEGÚN VISIBILIDAD DEL VIDEO -->
+		<script src="./scripts/header.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				const parallaxSections = document.querySelectorAll(".parallax");
+				const titleEl = document.querySelector(".text-container h2");
+				const textEl = document.querySelector(".text-container p");
+				const buttonEl = document.querySelector(
+					".text-container button"
+				);
+
+				const observer = new IntersectionObserver(
+					(entries) => {
+						entries.forEach((entry) => {
+							if (entry.isIntersecting) {
+								const { title, text, btn } =
+									entry.target.dataset;
+
+								// Animación suave al cambiar
+								titleEl.style.opacity = 0;
+								textEl.style.opacity = 0;
+								buttonEl.style.opacity = 0;
+
+								setTimeout(() => {
+									titleEl.textContent = title;
+									textEl.textContent = text;
+									buttonEl.textContent = btn;
+
+									titleEl.style.opacity = 1;
+									textEl.style.opacity = 1;
+									buttonEl.style.opacity = 1;
+								}, 300);
+							}
+						});
+					},
+					{ threshold: 0.5 } // Se activa cuando al menos 50% de la imagen es visible
+				);
+
+				parallaxSections.forEach((section) =>
+					observer.observe(section)
+				);
+			});
+		</script>
+	</body>
 </html>

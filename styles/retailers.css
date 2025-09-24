@@ -1,0 +1,51 @@
+.retailers {
+	padding: 60px 20px;
+	text-align: center;
+}
+
+.retailers h2 {
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 40px;
+}
+
+.retailer-list {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.retailer-group {
+	margin-bottom: 40px;
+}
+
+.retailer-group h3 {
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 8px;
+}
+
+.retailer-item {
+	margin-bottom: 24px;
+	padding-left: 10px;
+}
+
+.retailer-item p {
+	margin: 6px 0;
+	font-size: 1rem;
+}
+
+.retailer-item p a {
+	text-decoration: none;
+	color: #124f2c;
+}
+
+.retailer-item a:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+	.retailer-item p {
+		font-size: 0.9rem;
+	}
+}
